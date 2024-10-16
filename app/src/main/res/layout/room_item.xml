@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/roomNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre de la Habitación" />
-
-    <TextView
-        android:id="@+id/roomTypeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tipo de Habitación" />
+        android:text="Nombre de la Habitación"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/roomConsumptionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Consumo" />
+        android:text="Consumo: 0 kWh"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
 </LinearLayout>
+
