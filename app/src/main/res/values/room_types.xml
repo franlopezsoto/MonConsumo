@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="room_types">
+        <item>Cocina</item>
+        <item>Salón</item>
+        <item>Habitación</item>
+        <item>Baño</item>
+        <item>Garaje</item>
+        <item>Oficina</item>
+    </string-array>
+</resources>

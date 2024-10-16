@@ -8,17 +8,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MonitoreoConsumoDelHogar">
+        android:theme="@style/Theme.MyApp">
 
+        <!-- Declaración de la actividad principal -->
         <activity android:name=".MainActivity"
-            android:exported="true"> <!-- Agrega esta línea -->
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- Otras actividades aquí -->
+        <!-- Declaración de RoomActivity -->
+        <activity android:name=".RoomActivity"
+            android:exported="true"/> <!-- Asegúrate que esta línea esté incluida -->
+
+        <!-- Otras actividades que quieras añadir pueden ir aquí -->
+
     </application>
 
 </manifest>
+
