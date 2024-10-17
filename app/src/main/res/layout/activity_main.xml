@@ -15,9 +15,9 @@
         android:textSize="18sp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- RecyclerView para mostrar la lista de habitaciones -->
-    <RecyclerView
-        android:id="@+id/roomRecyclerView"
+    <!-- ListView para mostrar la lista de habitaciones -->
+    <ListView
+        android:id="@+id/roomListView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"

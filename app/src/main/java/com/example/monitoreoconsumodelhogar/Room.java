@@ -5,17 +5,23 @@ public class Room {
     private String type;
     private double totalConsumption;
 
+    // Constructor que acepta tres parámetros
     public Room(String name, String type, double totalConsumption) {
         this.name = name;
         this.type = type;
         this.totalConsumption = totalConsumption;
     }
 
+    // Si quieres también un constructor que solo acepte dos parámetros
+    public Room(String name, String type) {
+        this.name = name;
+        this.type = type;
+        this.totalConsumption = 0.0; // Puedes inicializar el consumo a un valor por defecto
+    }
+
+    // Getters y Setters
     public String getName() {
         return name;
-    }
-    public double getConsumption() {
-        return totalConsumption; // Devuelve el consumo total de la habitación
     }
 
     public void setName(String name) {
@@ -38,5 +44,3 @@ public class Room {
         this.totalConsumption = totalConsumption;
     }
 }
-
-
