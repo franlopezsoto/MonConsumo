@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="10dp">
 
     <!-- Nombre de la habitación -->
     <TextView
@@ -12,15 +12,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre de la habitación"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:textStyle="bold"/>
 
-    <!-- Tipo de la habitación -->
+    <!-- Tipo de habitación -->
     <TextView
         android:id="@+id/roomTypeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tipo de la habitación"
-        android:textSize="14sp"/>
+        android:text="Tipo de habitación"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
 
     <!-- Consumo de la habitación -->
     <TextView
@@ -28,6 +30,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Consumo: 0 kWh"
-        android:textSize="14sp"/>
-
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
 </LinearLayout>

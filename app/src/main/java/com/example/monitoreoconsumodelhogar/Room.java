@@ -1,5 +1,7 @@
 package com.example.monitoreoconsumodelhogar;
 
+import java.util.Random;
+
 public class Room {
     private String name;
     private String type;
@@ -11,14 +13,6 @@ public class Room {
         this.type = type;
         this.totalConsumption = totalConsumption;
     }
-
-    // Si quieres también un constructor que solo acepte dos parámetros
-    public Room(String name, String type) {
-        this.name = name;
-        this.type = type;
-        this.totalConsumption = 0.0; // Puedes inicializar el consumo a un valor por defecto
-    }
-
     // Getters y Setters
     public String getName() {
         return name;
@@ -38,6 +32,10 @@ public class Room {
 
     public double getTotalConsumption() {
         return totalConsumption;
+    }
+    private double generateRandomConsumption() {
+        Random random = new Random();
+        return 10 + (100 - 10) * random.nextDouble();  // Genera un valor entre 10 y 100 kWh
     }
 
     public void setTotalConsumption(double totalConsumption) {

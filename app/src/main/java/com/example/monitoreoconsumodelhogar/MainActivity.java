@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Inicializa la base de datos
         databaseHelper = new DatabaseHelper(this);
-        List<Room> roomList = databaseHelper.getAllRooms(); // Obtenemos todas las habitaciones
+        List<Room> roomList = databaseHelper.getAllRooms();
 
-        // Inicializa la vista del ListView
-        roomListView = findViewById(R.id.roomListView);  // Asegúrate de que el ID coincida con el XML
+        // Inicializa las vistas
+        roomListView = findViewById(R.id.roomListView);
         totalConsumptionView = findViewById(R.id.totalConsumptionView); // Muestra el consumo total
 
         // Si la lista no está vacía, asigna el adaptador al ListView
@@ -36,10 +36,8 @@ public class MainActivity extends AppCompatActivity {
             // Calcula y muestra el consumo total
             double totalConsumption = 0;
             for (Room room : roomList) {
-                totalConsumption += room.getTotalConsumption(); // Sumar el consumo de cada habitación
+                totalConsumption += room.getTotalConsumption();
             }
-
-            // Mostramos el consumo total en el TextView
             totalConsumptionView.setText("Consumo Total: " + totalConsumption + " kWh");
 
         } else {
@@ -47,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             totalConsumptionView.setText("No hay habitaciones guardadas.");
         }
 
-
+        // Configura el botón para agregar una nueva habitación
         Button addRoomButton = findViewById(R.id.addRoomButton);
         addRoomButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, RoomActivity.class);
@@ -55,3 +53,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
